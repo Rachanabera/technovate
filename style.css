@@ -1,0 +1,54 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: url('stars_background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #00fff7;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.glitch-text {
+  font-size: 32px;
+  animation: glitch 1.5s infinite;
+}
+
+.sub-glitch {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #00a8c6;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.passport {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px dashed #00fff7;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  display: inline-block;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #ff00c8; }
+  50% { text-shadow: -2px -2px #00fff7; }
+  100% { text-shadow: 2px 2px #ff00c8; }
+}
